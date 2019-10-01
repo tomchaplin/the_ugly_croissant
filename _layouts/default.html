@@ -6,9 +6,13 @@
 		<title>The Ugly Croissant - {{page.title}}</title>
 		<!-- My stylesheet -->
 		<link rel="stylesheet" href="/css/styles.css" type="text/css">
-
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Serif|Open+Sans|Playfair+Display&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		{{ content }}
+		<div class="site_container">
+			{% include topnav.html %}
+			{{ content }}
+		</div>
 	</body>
 </html>
